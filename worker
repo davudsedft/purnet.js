@@ -1,0 +1,21 @@
+export default {
+
+        async fetch(request , env){
+            let url  = new URL(Request.URL);
+        if(url.pathname.startsWith('/'))    {
+                url.hostname = 'falling-brook-84d5.3698.workers.dev';
+
+                let new_request = new request(url , request);
+
+
+            }
+            return fetch(new_request);
+
+        },
+
+          
+
+
+
+
+} ;
